@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Word Scramble Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../BS5/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container_1">
+      <h2>Word Scramble</h2>
+      <div class="content">
+        <p id="scrambleWord"></p>
+        <div class="details">
+          <p>Hint: <span id="hint"></span></p>
+          <p>Time Left: <b id="timer"></b>s</p>
+        </div>
+
+        <p>counter word:<span id="counter">0</span></p>
+        <div
+          class="alert alert-success alert-dismissible"
+          style="display: none"
+          id="alerteword"
+        >
+          <div class="d-flex justify-content-between">
+            <p>
+              <strong>Congratulations</strong>
+            </p>
+            <p
+              style="cursor: pointer; width: 10px; height: 5px"
+              id="close_btnalart"
+            >
+              X
+            </p>
+          </div>
+        </div>
+        <div
+          class="alert alert-success alert-dismissible"
+          style="display: none"
+          id="alertewordtry"
+        >
+          <div class="d-flex justify-content-between">
+            <p>
+              <strong>Try again</strong>
+            </p>
+            <p
+              style="cursor: pointer; width: 10px; height: 5px"
+              id="close_btnalarttry"
+            >
+              X
+            </p>
+          </div>
+        </div>
+        <input
+          type="text"
+          spellcheck="false"
+          placeholder="Enter a valid word"
+          id="inputWord"
+        />
+        <div class="buttons">
+          <button id="refreshWord">Refresh Word</button>
+          <button id="checkWord">Check Word</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/words.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="../BS5/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
